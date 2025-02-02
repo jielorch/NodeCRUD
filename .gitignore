@@ -1,0 +1,17 @@
+# Exclude the dist folder
+dist/
+
+# Exclude package-lock.json
+package-lock.json
+
+# Exclude node_modules folder
+node_modules/
+
+# Node.js specific items (You can include these to cover common cases)
+npm-debug.log
+.DS_Store
+
+# Other typical items (Optional)
+*.log
+.idea/
+.vscode/
