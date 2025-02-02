@@ -52,6 +52,11 @@ class postController{
         res.send('post deleted');
     };
 
+    getAllPost = async(req: Request, res: Response) => {
+        const posts = await postServices.getPosts();
+        res.send(posts);
+    }
+
 }
 
 export const PostController = new postController();

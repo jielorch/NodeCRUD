@@ -6,6 +6,8 @@ export const router = express.Router();
 // add post route
 router.post('/', PostController.addpost);
 
+router.get('/get-all-posts', PostController.getAllPost);
+
 // get posts
 router.get('/', PostController.getPosts);
 
@@ -18,4 +20,6 @@ router.put('/:id', PostController.updatePost);
 
 // delete a post
 router.delete('/:id', PostController.deletePost);
+
+
 
